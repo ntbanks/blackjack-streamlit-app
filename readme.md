@@ -10,13 +10,13 @@
 
 
 ## Background
----
+
 I started this little journey because I've always wanted to learn how to beat the dealer's odds in the casino game BlackJack.  I was expecting to simulate BlackJack games, do some fun data analysis, and try to determine the best strategy to win hands. As it turns out, the strategy has already been researched heavily and the general strategy is for the most part already agreed upon.
 
 I was too far down the rabbit hole and was too excited to stop my little side project, so I made this StreamLit app. The goal is to simulate hands of BlackJack while suggesting to the user which decision to make according to the strategy guidelines. I used the chart from [BlackJack Apprenticeship](https://www.blackjackapprenticeship.com/blackjack-strategy-charts/) to build the suggestion algorithm. 
 
 ## The strategy
----
+
 Conceptually, the strategy is simple. Once delt your first two cards there is a queue of questions you have to answer:
 
 - Do you split?
@@ -41,12 +41,11 @@ Ok cool... so how do you know when to split or hit or what? The wonderful people
 
 
 ## Strategy Card
----
+
 ![BlackJack Basic Strategy guide.](/assets/img/BJA_Basic_Strategy.jpeg)
 
 
 ## Initial Setup
----
 
 1. Clone this repository and move into the directory.
 
@@ -70,7 +69,7 @@ Ok cool... so how do you know when to split or hit or what? The wonderful people
     ```
 
 ## Running the StreamLit app
----
+
 To run the StreamLit app, from the root folder of the project run the following command. StreamLit will host the game on your machine at port 8501. You can access in your [browser](localhost:8501).
 ```shell
 streamlit run app.py
