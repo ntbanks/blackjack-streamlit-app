@@ -42,12 +42,12 @@ Ok cool... so how do you know when to split or hit or what? The wonderful people
 
 ## Strategy Card
 
-![BlackJack Basic Strategy guide.](/assets/img/BJA_Basic_Strategy.jpeg)
+![BlackJack Basic Strategy guide.](app/assets/img/BJA_Basic_Strategy.jpeg)
 
 
 ## Initial Setup
 
-1. Clone this repository and move into the directory.
+1. Clone this repository and move into the app directory.
 
     ```shell
     git clone git@github.com:ntbanks/blackjack-streamlit-app.git
@@ -65,16 +65,16 @@ Ok cool... so how do you know when to split or hit or what? The wonderful people
 
     ```shell
     pip install --upgrade pip
-    pip install -r requirements.txt
+    pip install -r app/requirements.txt
     ```
 
 ## Running the StreamLit app
 
 To run the StreamLit app, from the root folder of the project run the following command. StreamLit will host the game on your machine at port 8501. You can access in your [browser](localhost:8501).
 ```shell
-streamlit run app.py
+streamlit run app/app.py
 ```
 If needed, you can pass StreamLit a different port.
 ```shell
-streamlit run app.py --server.port 8000
+streamlit run app/app.py --server.port 8000
 ```
