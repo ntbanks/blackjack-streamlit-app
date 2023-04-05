@@ -1,5 +1,7 @@
 import streamlit as st
 import theme
+from pathlib import Path
+
 from casino.cards import Deck, Hand, Card, Suit, Face
 from casino.decision_maker import dealer_decision, player_decision
 
@@ -8,7 +10,10 @@ STARTING_CHIPS = 200
 
 
 st.set_page_config(layout="wide", page_title="Learn BlackJack!")
-theme.local_css("assets/css/main.css")
+
+dir_path = Path(__file__).resolve().parent
+full_path = dir_path.joinpath(Path('assets/css/main.css'))
+theme.local_css(full_path)
 
 
 ss = st.session_state
