@@ -1,0 +1,141 @@
+:root {
+    --card-area-height: 195px;
+    --card-margin: 20px 10px 20px 10px;
+    --card-height: 120px;
+    --card-width: 100px;
+    --button-text-color: white;
+}
+
+
+/* REMOVING STREAMLIT BRANDING THINGS */
+/* hamburger menu in top right */
+#MainMenu {
+	display: none;
+}
+
+/* this is the "running" status bar thing */
+div[data-testid=stStatusWidget] {
+	display: none;
+}
+
+/* this removes the weird colored line on the top of all streamlit apps */
+div[data-testid=stDecoration]{
+	display: none;
+}
+
+/* removes the "made my streamlit" footer */
+footer{
+	display: none !important;
+}
+
+.card_area_small {
+    width: 80%;
+    height: var(--card-area-height);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #5a5959;
+    position: relative;
+}
+
+
+.bust-text {
+    text-align: center;
+    font-size: 6em;
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(-20deg);
+    z-index: 1000000000;
+}
+
+.active {
+    background-color: red;
+}
+
+#dealer, #player, #player-split, #play-blackjack {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    width: var(--card-width);
+    height: var(--card-height);
+    margin: var(--card-margin);
+    margin-right: -90px;
+    position: relative;
+}
+
+.card_showing {
+    background-color: white;
+    color: black;
+}
+
+.card_hidden {
+    background-color: #222222;
+    color: #222222;
+}
+
+.card_letter {
+    position: absolute;
+    font-size: 2em;
+    left: 5px; 
+    top: 0px;
+}
+
+.card_suit {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    font-size: 3em;
+}
+
+.hand_title {
+    text-align: center;
+}
+
+.downloadlink, div.stButton > button {
+	border-radius: 4px !important; 
+	color: var(--button-text-color) !important;
+    position: relative;
+    border-color: white;
+}
+
+.downloadlink, div.stButton > button[kind=primary] {
+    background-color: rgb(19, 23, 32);
+}
+
+.downloadlink, div.stButton > button[kind=primary] {
+    color: green !important;
+}
+
+.downloadlink, div.stButton > button[kind=primary]:hover {
+    border-color: green;
+    color: green !important;
+}
+
+.downloadlink, div.stButton > button[kind=secondary]:hover {
+    border-color: red;
+    color: red !important;
+}
+
+.downloadlink, div.stButton > button:disabled {
+    border-color: rgba(255,255,255,.1);
+    background-color: rgb(19, 23, 32);
+    color: rgba(255,255,255,.1) !important;
+}
+
+.downloadlink, div.stButton > button:disabled:hover {
+    border-color: rgba(255,255,255,.1);
+    background-color: rgb(19, 23, 32);
+    color: rgba(255,255,255,.1) !important;
+}
